@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+{% block 'title' %}Lista de Medicos {{ titulo }}{% endblock 'title' %}
+{% block 'head' %}
+    <link rel="stylesheet" href="{% static 'analise/lista_medicos.css' %}">
+{% endblock 'head' %}
+
+{% block 'body' %}
+<div class="container">
+    <h1 class="titulo">Lista de Médicos {{ title }}</h1>
+    <h5 class="subtitulo">Área administrativa</h5>
+    <div class="button-group">
+        <a href="{% url 'analise:aprovados' %}" class="btn-aprovados">Lista de Aprovados</a>
+        <a href="{% url 'analise:analise' %}" class="btn-analise">Lista em Análise</a>
+        <a href="{% url 'analise:reprovados' %}" class="btn-reprovados">Lista de Negados</a>
+    </div>
+   
+    <div class="medicos-lista">
+        {% if medicos %}
+            {% for medico in medicos %}
+            <div class="card-medico">
+                <img src="{{ medico.foto.url }}" alt="{{ medico.nome }}" class="img-medico">
+                <div class="info-medico">
+                    <h2>{{ medico.nome }}</h2>
+                    <h3><strong>{{ medico.especialidade }}</strong></h3>
+                    <p><strong>Endereço:</strong> {{ medico.rua }}</p>
+                    <p><strong>Status:</strong> <span class="status-{{ medico.status }}">{{ medico.status }}</span></p>
+                    <a href="{% url 'analise:perfil-medico' medico.id %}" class="btn-ver-perfil">Ver Perfil</a>
+                </div>
+            </div>
+            {% endfor %}
+
+    </div>
+            {% else %}
+</div>
+<div class="baixo">
+    <div class="titulo-baixo">
+        <h3 class="titulo">Nenhum médico nessa lista...</h3>
+    </div>
+    {% endif %}
+    <div class='botao-voltar'>
+        <a href="{% url 'analise:analise' %}" class="btn-voltar">Voltar para o site</a>
+    </div>
+</div>
+{% endblock 'body' %}

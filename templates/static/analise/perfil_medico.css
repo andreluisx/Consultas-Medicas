@@ -1,0 +1,114 @@
+body {
+    background-color: #121212; /* Cor de fundo escura */
+    color: #fff; /* Cor do texto */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333; /* Cor de fundo da caixa de conteúdo */
+    border-radius: 10px; /* Borda arredondada */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.perfil {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #444; /* Cor de fundo dos campos de texto e seleção */
+    color: #fff; /* Cor do texto nos campos de texto e seleção */
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #444; /* Cor de fundo da área de texto */
+    color: #fff; /* Cor do texto na área de texto */
+}
+
+.img-perfil {
+    width: 200px; /* Largura da foto */
+    height: 200px; /* Altura da foto */
+    object-fit: cover; /* Mantém a proporção da imagem e corta o excesso */
+    border-radius: 50%; /* Deixa a foto redonda */
+    margin: 10px auto; /* Centraliza a foto horizontalmente */
+    display: block; /* Transforma a imagem em bloco para aplicar margin auto */
+    border: 3px solid #fff; /* Borda branca ao redor da foto de perfil */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+select {
+    background-color: #444; /* Cor de fundo da seleção */
+    color: #fff; /* Cor do texto na seleção */
+}
+
+.titulo {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.btn-ver-perfil {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff; /* azul */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    border: none; /* remover borda */
+}
+
+.btn-ver-perfil:hover {
+    background-color: #0056b3; /* azul mais escuro */
+}
+
+.btn-ver-perfil {
+    background-color: #007bff; /* azul */
+    color: #fff;
+}
+
+.btn-ver-perfil:hover {
+    background-color: #0056b3; /* azul mais escuro */
+}
+.btn-voltar {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff; /* azul */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-voltar:hover {
+    background-color: #0056b3; /* azul mais escuro */
+}

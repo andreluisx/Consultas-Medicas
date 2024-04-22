@@ -1,0 +1,165 @@
+body {
+    background-color: #121212; /* Cor de fundo escura */
+    color: #fff; /* Cor do texto */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    padding: 20px;
+}
+
+.medicos-lista {
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1rem;
+    padding-bottom: 20px;
+    justify-content: left;
+    align-items: left; 
+    
+}
+
+.card-medico {
+    background-color: #333; /* Cor de fundo escura para os cards */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Sombra branca */
+    padding: 10px; /* Reduz o padding para diminuir o tamanho do card */
+    max-width: calc(120% - 50px); /* Define a largura do card para 25% da largura do container */
+    margin: 10px; /* Adiciona margem entre os cards */
+}
+
+.img-medico {
+    width: 200px; /* Largura da foto */
+    height: 200px; /* Altura da foto */
+    object-fit: cover; /* Mantém a proporção da imagem e corta o excesso */
+    border-radius: 50%; /* Deixa a foto redonda */
+    margin: 10px auto; /* Centraliza a foto horizontalmente */
+    display: block; /* Transforma a imagem em bloco para aplicar margin auto */
+    border: 3px solid #fff; /* Borda branca ao redor da foto de perfil */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.info-medico {
+    text-align: center;
+}
+
+.info-medico h2 {
+    margin-bottom: 5px;
+    font-size: 1.7rem;
+}
+
+.info-medico h3 {
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+}
+
+.status-analise {
+    color: #ffc107; /* Amarelo para status 'análise' */
+}
+
+.status-aprovado {
+    color: #28a745; /* Verde para status 'aprovado' */
+}
+
+.status-negado {
+    color: #dc3545; /* Vermelho para status 'negado' */
+}
+
+.btn-ver-perfil {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff; /* Azul para botão 'Ver Perfil' */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-ver-perfil:hover {
+    background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+}
+
+.titulo {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.subtitulo {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.btn-aprovados,
+.btn-analise,
+.btn-reprovados {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-aprovados {
+    background-color: #28a745; /* verde */
+}
+
+.btn-analise {
+    background-color: #ffc107; /* amarelo */
+}
+
+.btn-reprovados {
+    background-color: #dc3545; /* vermelho */
+}
+
+.btn-aprovados:hover,
+.btn-analise:hover,
+.btn-reprovados:hover {
+    background-color: darken(#28a745, 10%); /* darken the color on hover */
+}
+
+.btn-voltar {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff; /* azul */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-voltar:hover {
+    background-color: #0056b3; /* azul mais escuro */
+}
+.botao-voltar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.baixo {
+    display: block;
+    align-items: center;
+}
+
+.titulo-baixo {
+    padding: 100px 0px;
+
+}
